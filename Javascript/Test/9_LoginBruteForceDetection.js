@@ -15,7 +15,7 @@ function LoginBruteForceDetection() {
         let attempt = counter+1;
        
         console.log(attempts[counter]);
-        if (attempts[counter] == 'correct' && attempt <=3) {
+        if (attempts[counter] === 'correct' && attempt <=3) {
             break;
         }
         else if(attempt <=3){
