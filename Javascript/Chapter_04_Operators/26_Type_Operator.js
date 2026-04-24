@@ -1,0 +1,9 @@
+console.log(typeof 10); // Output: number
+console.log(typeof 10.7); // Output: number
+console.log(typeof "Hello"); // Output: string
+console.log(typeof true); // Output: boolean
+console.log(typeof null); // Output: object
+console.log(typeof undefined); // Output: undefined
+console.log(typeof []); // Output: object
+console.log(typeof {}); // Output: object
+console.log(typeof function(){}); // Output: function
