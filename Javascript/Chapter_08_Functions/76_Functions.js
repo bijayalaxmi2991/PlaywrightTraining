@@ -15,10 +15,10 @@ console.log("Score: "+score2+" - "+result2); // Output: Score: 75 - FAIL
 // 2) function call - invokes the function with specific arguments to execute the code inside the function
 
 //part 1 - function definition
-function checkScore(score) {
+function checkResult(score) {
     return score >= 80 ? "PASS" : "FAIL";
 }
 
 //part 2 - function call
-checkScore(85);
-checkScore(75);
+checkResult(85);
+checkResult(75);

@@ -3,4 +3,5 @@ function greet(){
     console.log("Hello, World!");
 }
 
-greet(); // Output: Hello, World!
+greet(); //Function call 
+// Output: Hello, World!
