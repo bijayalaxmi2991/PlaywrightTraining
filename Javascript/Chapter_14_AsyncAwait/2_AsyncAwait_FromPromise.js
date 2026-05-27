@@ -1,0 +1,58 @@
+function openBrowser(){
+    return new Promise(function(resolve, reject){
+        resolve("Browser opened");
+    });
+}
+
+function goToLogin(){
+    return new Promise(function(resolve, reject){
+        resolve("Login page opened");
+    });      
+}
+
+function enterCredentials(){
+    return new Promise(function(resolve, reject){
+        resolve("Credentials entered");
+    });             
+}
+function clickLoginButton(){
+    return new Promise(function(resolve, reject){
+        resolve("Login button clicked");
+    });
+}
+
+//Promise Chaining
+// openBrowser().then(function(msg){
+//     console.log("Step 1: "+msg);
+//     return goToLogin();
+// }).then(function(msg){
+//     console.log("Step 2: "+msg);
+//     return enterCredentials();
+// }).then(function(msg){
+//     console.log("Step 3: "+msg);
+//     return clickLoginButton();
+// }).then(function(msg){
+//     console.log("Step 4: "+msg);
+// }).catch(function(err){
+//     console.log("Error: "+err);
+// }).finally(function(){
+//     console.log("Test Completed");
+// });
+
+
+async function runTest(){
+    let msg1 = await openBrowser();
+    console.log("Step 1: "+msg1);
+
+    let msg2 = await goToLogin();
+    console.log("Step 2: "+msg2);
+
+    let msg3 = await enterCredentials();
+    console.log("Step 3: "+msg3);
+    
+    let msg4 = await clickLoginButton();
+    console.log("Step 4: "+msg4);
+    
+}
+
+runTest();

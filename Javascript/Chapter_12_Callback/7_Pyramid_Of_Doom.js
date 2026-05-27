@@ -18,6 +18,7 @@ function step4(callback) {
     callback();
 }
 
+//Pyramid of Doom
 step1(function() {
     step2(function() {
         step3(function() {
