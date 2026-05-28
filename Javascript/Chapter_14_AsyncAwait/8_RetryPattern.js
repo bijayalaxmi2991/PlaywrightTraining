@@ -19,6 +19,7 @@ async function retryTest(maxRetries){
             let result = await flakyAPI();
             console.log(result);
             return result; //or break; to exit the loop if successful
+            break;
         }catch(error){
             console.log(error);
         }
